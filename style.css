@@ -1,52 +1,58 @@
-body{
+/* GLOBAL RESET */
+
+*{
+box-sizing:border-box;
 margin:0;
-font-family:"Segoe UI",sans-serif;
-background:#f4f6f9;
+padding:0;
 }
+
+body{
+font-family:"Segoe UI", Arial, sans-serif;
+background:linear-gradient(135deg,#f4f6f9,#e8f1f5);
+min-height:100vh;
+display:flex;
+justify-content:center;
+}
+
+/* APP WRAPPER */
 
 .app{
-max-width:420px;
-margin:auto;
-min-height:100vh;
+width:100%;
+max-width:480px;
 background:white;
-box-shadow:0 0 20px rgba(0,0,0,0.08);
+min-height:100vh;
 }
 
-/* TOP BAR */
+/* HEADER */
 
-.top-bar{
+.app-header{
 display:flex;
-justify-content:flex-end;
-padding:10px 15px;
+align-items:center;
+justify-content:space-between;
+padding:15px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* HERO */
-
-.hero{
-text-align:center;
-padding:20px;
+.header-left{
+display:flex;
+align-items:center;
+gap:12px;
 }
 
-.hero-logo{
-width:90px;
-margin-bottom:10px;
+.logo{
+height:45px;
 }
 
-.hero h1{
-margin:0;
-font-size:22px;
-color:#2c3e50;
-}
-
-.hero p{
-margin-top:5px;
+.tagline{
+font-size:12px;
 color:#777;
-font-size:14px;
 }
 
 /* CONTAINER */
 
 .container{
+width:100%;
 padding:15px;
 }
 
@@ -57,7 +63,7 @@ background:white;
 border-radius:12px;
 padding:18px;
 margin-bottom:15px;
-box-shadow:0 4px 14px rgba(0,0,0,0.06);
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
 }
 
 /* ADMISSION OPTIONS */
@@ -66,16 +72,29 @@ box-shadow:0 4px 14px rgba(0,0,0,0.06);
 display:flex;
 flex-direction:column;
 gap:10px;
-margin:10px 0;
+margin-top:10px;
 }
 
 .admission-options label{
+display:flex;
+align-items:center;
+gap:10px;
 background:#f4f6f9;
 padding:12px;
 border-radius:8px;
-display:flex;
-gap:10px;
-align-items:center;
+cursor:pointer;
+}
+
+/* INPUTS */
+
+input,
+select{
+width:100%;
+padding:10px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+margin-top:10px;
 }
 
 /* INPUT GROUP */
@@ -83,28 +102,26 @@ align-items:center;
 .input-group{
 display:flex;
 gap:10px;
+margin-top:10px;
+flex-wrap:wrap;
 }
 
-input, select{
-width:100%;
-padding:10px;
-border-radius:8px;
-border:1px solid #ddd;
+.input-group input,
+.input-group select{
+flex:1;
+min-width:120px;
 }
 
 /* BUTTONS */
 
 button{
+width:100%;
 padding:12px;
 border:none;
 border-radius:8px;
+margin-top:10px;
 font-size:15px;
 cursor:pointer;
-}
-
-.full-btn{
-width:100%;
-margin-top:10px;
 }
 
 .primary{
@@ -121,19 +138,54 @@ background:#e74c3c;
 color:white;
 }
 
+.danger:hover{
+background:#c0392b;
+}
+
+/* CHECKBOX */
+
+.checkbox{
+display:flex;
+align-items:center;
+gap:8px;
+margin-top:12px;
+font-size:14px;
+}
+
 /* SUBJECT LIST */
 
 #subjectList{
 list-style:none;
-padding:0;
 margin-top:10px;
 }
 
 #subjectList li{
 background:#f1f5f8;
-padding:8px 10px;
+padding:10px;
 border-radius:6px;
 margin-bottom:6px;
+}
+
+/* RESULTS TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+font-size:13px;
+}
+
+table th,
+table td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+/* TABLE SCROLL MOBILE */
+
+#results{
+overflow-x:auto;
 }
 
 /* DARK MODE */
@@ -158,10 +210,24 @@ color:white;
 border:1px solid #555;
 }
 
+.dark .admission-options label{
+background:#3a3a3a;
+}
+
 .dark #subjectList li{
 background:#3a3a3a;
 }
 
-.dark .admission-options label{
-background:#3a3a3a;
+/* RESPONSIVE */
+
+@media (max-width:500px){
+
+.logo{
+height:40px;
+}
+
+.card{
+padding:15px;
+}
+
 }
