@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DBATU GradeMate</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="top-bar">
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+</header>
+
+
+<div class="hero">
+
+<img src="assets/images/icon-192.png" class="hero-logo">
+
+<h1>DBATU GradeMate</h1>
+
+<p>SGPA & CGPA Calculator</p>
+
+</div>
+
+
+<div class="container">
+
+
+<div class="card">
+
+<h2>Select Admission Type</h2>
+
+<div class="admission-options">
+
+<label>
+<input type="radio" name="admission" value="regular">
+Regular
+</label>
+
+<label>
+<input type="radio" name="admission" value="dsy">
+Direct Second Year
+</label>
+
+</div>
+
+<button class="primary full-btn" onclick="startApp()">Start</button>
+
+</div>
+
+
+
+<div id="mainApp" style="display:none;">
+
+
+<div class="card">
+
+<h3>Semester</h3>
+
+<select id="semesterSelect"></select>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Add Subject</h3>
+
+<div class="input-group">
+
+<input type="number" id="credit" placeholder="Credit">
+
+<select id="grade">
+
+<option value="">Grade</option>
+<option>EX</option>
+<option>AA</option>
+<option>AB</option>
+<option>BB</option>
+<option>BC</option>
+<option>CC</option>
+<option>CD</option>
+<option>DD</option>
+<option>DE</option>
+<option>EE</option>
+<option>FF</option>
+<option>AU</option>
+
+</select>
+
+</div>
+
+<button class="primary full-btn" onclick="addSubject()">Add Subject</button>
+
+<ul id="subjectList"></ul>
+
+<label class="checkbox">
+<input type="checkbox" id="ignoreAU">
+Ignore AU Subjects
+</label>
+
+<button class="primary full-btn" onclick="calculateSemester()">Calculate SGPA</button>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Results</h3>
+
+<div id="results"></div>
+
+<button class="danger full-btn" onclick="clearAllData()">Clear Data</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>
