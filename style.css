@@ -1,6 +1,8 @@
-/* GLOBAL RESET */
+/* ---------- RESET ---------- */
 
-*{
+*,
+*::before,
+*::after{
 box-sizing:border-box;
 margin:0;
 padding:0;
@@ -8,65 +10,70 @@ padding:0;
 
 body{
 font-family:"Segoe UI", Arial, sans-serif;
-background:linear-gradient(135deg,#f4f6f9,#e8f1f5);
-min-height:100vh;
+background:#f4f6f9;
 display:flex;
 justify-content:center;
 }
 
-/* APP WRAPPER */
+/* ---------- APP WRAPPER ---------- */
 
 .app{
 width:100%;
 max-width:480px;
+margin:auto;
 background:white;
 min-height:100vh;
+box-shadow:0 0 20px rgba(0,0,0,0.08);
 }
 
-/* HEADER */
+/* ---------- TOP BAR ---------- */
 
-.app-header{
+.top-bar{
 display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px;
-background:white;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+justify-content:flex-end;
+padding:10px 15px;
 }
 
-.header-left{
-display:flex;
-align-items:center;
-gap:12px;
+/* ---------- HERO ---------- */
+
+.hero{
+text-align:center;
+padding:20px;
 }
 
-.logo{
-height:45px;
+.hero-logo{
+width:85px;
+margin-bottom:10px;
 }
 
-.tagline{
-font-size:12px;
-color:#777;
+.hero h1{
+font-size:22px;
+color:#2c3e50;
 }
 
-/* CONTAINER */
+.hero p{
+font-size:14px;
+color:#666;
+margin-top:5px;
+}
+
+/* ---------- CONTAINER ---------- */
 
 .container{
-width:100%;
 padding:15px;
 }
 
-/* CARD */
+/* ---------- CARD ---------- */
 
 .card{
 background:white;
-border-radius:12px;
+border-radius:10px;
 padding:18px;
 margin-bottom:15px;
-box-shadow:0 4px 14px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* ADMISSION OPTIONS */
+/* ---------- ADMISSION OPTIONS ---------- */
 
 .admission-options{
 display:flex;
@@ -78,26 +85,37 @@ margin-top:10px;
 .admission-options label{
 display:flex;
 align-items:center;
-gap:10px;
-background:#f4f6f9;
-padding:12px;
+justify-content:space-between;
+background:#f2f4f7;
+padding:12px 14px;
 border-radius:8px;
+font-size:15px;
+font-weight:500;
 cursor:pointer;
 }
 
-/* INPUTS */
+.admission-options input{
+margin-right:10px;
+transform:scale(1.1);
+}
+
+.admission-options label:hover{
+background:#e6eef4;
+}
+
+/* ---------- INPUTS ---------- */
 
 input,
 select{
 width:100%;
 padding:10px;
-border-radius:8px;
-border:1px solid #ddd;
+border-radius:6px;
+border:1px solid #ccc;
 font-size:14px;
 margin-top:10px;
 }
 
-/* INPUT GROUP */
+/* ---------- INPUT GROUP ---------- */
 
 .input-group{
 display:flex;
@@ -109,19 +127,22 @@ flex-wrap:wrap;
 .input-group input,
 .input-group select{
 flex:1;
-min-width:120px;
+min-width:0;
 }
 
-/* BUTTONS */
+/* ---------- BUTTONS ---------- */
 
 button{
-width:100%;
 padding:12px;
 border:none;
-border-radius:8px;
-margin-top:10px;
-font-size:15px;
+border-radius:6px;
 cursor:pointer;
+font-size:15px;
+margin-top:10px;
+}
+
+.full-btn{
+width:100%;
 }
 
 .primary{
@@ -142,7 +163,7 @@ color:white;
 background:#c0392b;
 }
 
-/* CHECKBOX */
+/* ---------- CHECKBOX ---------- */
 
 .checkbox{
 display:flex;
@@ -150,9 +171,15 @@ align-items:center;
 gap:8px;
 margin-top:12px;
 font-size:14px;
+white-space:nowrap;
 }
 
-/* SUBJECT LIST */
+.checkbox input{
+transform:scale(1.1);
+margin:0;
+}
+
+/* ---------- SUBJECT LIST ---------- */
 
 #subjectList{
 list-style:none;
@@ -161,18 +188,22 @@ margin-top:10px;
 
 #subjectList li{
 background:#f1f5f8;
-padding:10px;
+padding:8px;
 border-radius:6px;
 margin-bottom:6px;
 }
 
-/* RESULTS TABLE */
+/* ---------- RESULTS ---------- */
+
+#results{
+margin-top:10px;
+overflow-x:auto;
+}
 
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:15px;
-font-size:13px;
+font-size:14px;
 }
 
 table th,
@@ -182,13 +213,12 @@ padding:8px;
 text-align:center;
 }
 
-/* TABLE SCROLL MOBILE */
-
-#results{
-overflow-x:auto;
+table th{
+background:#2d89a0;
+color:white;
 }
 
-/* DARK MODE */
+/* ---------- DARK MODE ---------- */
 
 .dark{
 background:#1e1e1e;
@@ -212,22 +242,23 @@ border:1px solid #555;
 
 .dark .admission-options label{
 background:#3a3a3a;
+color:white;
 }
 
 .dark #subjectList li{
 background:#3a3a3a;
 }
 
-/* RESPONSIVE */
+/* ---------- MOBILE ---------- */
 
 @media (max-width:500px){
 
-.logo{
-height:40px;
+.hero-logo{
+width:70px;
 }
 
-.card{
-padding:15px;
+.input-group{
+flex-direction:column;
 }
 
 }
