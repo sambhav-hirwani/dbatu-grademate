@@ -136,7 +136,6 @@ input[type="number"], select {
 
 input:focus, select:focus {
     border-color: var(--primary-color);
-    ring: 2px solid var(--primary-color);
 }
 
 /* Buttons */
