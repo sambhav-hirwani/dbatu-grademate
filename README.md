@@ -53,27 +53,27 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 ---
 ### 📊 SGPA / CGPA Calculation
 
-![Calculation](assets/images/result.png)
+![Calculation](assets/screenshots/result.png)
 
 ---
 
 ### 🌙 Dark Mode
 
-![Dark Mode](assets/images/dark.png)
+![Dark Mode](assets/screenshots/dark.png)
 
 ---
 
 ### 📱 Mobile View
 
-![Mobile](assets/images/mobile1.png)
-![Mobile](assets/images/mobile2.png)
+![Mobile](assets/screenshots/mobile1.png)
+![Mobile](assets/screenshots/mobile2.png)
 
 ---
 
 ### ⚡ PWA Installation
 
-![PWA](assets/images/pwa1.png)
-![PWA](assets/images/pwa2.png)
+![PWA](assets/screenshots/pwa1.png)
+![PWA](assets/screenshots/pwa2.png)
 
 ---
 
