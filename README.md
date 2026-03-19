@@ -77,7 +77,7 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 <p align="center">
   <img src="assets/screenshots/pwa1.png" width="250"/>
-  <img scr="assets/screenshots/pwa2.png" width="250"/>
+  <img src="assets/screenshots/pwa2.png" width="250"/>
 </p>
 
 ---
