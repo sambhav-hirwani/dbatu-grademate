@@ -258,3 +258,9 @@ td button:hover {
     overflow-x: auto; /* Agar table bada ho jaye toh scroll bar dikhega */
     -webkit-overflow-scrolling: touch;
 }
+
+/* SEO Content Styling */
+.seo-content {
+  opacity: 0.85;
+  font-size: 0.9rem;
+}

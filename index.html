@@ -3,9 +3,18 @@
 
 <head>
 <meta charset="UTF-8">
+
+<title>DBATU SGPA & CGPA Calculator | GradeMate</title>
+
+<meta name="description" content="Free DBATU SGPA and CGPA calculator. Calculate GPA for Dr. Babasaheb Ambedkar Technological University students with accurate credit-based system.">
+
+<meta name="keywords" content="DBATU SGPA calculator, DBATU CGPA calculator, GPA calculator engineering, DBATU result calculator">
+
+<meta name="author" content="Sambhav Hirwani">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DBATU GradeMate</title>
+<meta name="robots" content="index, follow">
 
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
@@ -17,25 +26,23 @@
 <div class="app">
 
 <header class="top-bar">
-
 <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-
 </header>
-
 
 <div class="hero">
 
 <img src="assets/images/icon-512.png" class="hero-logo">
 
-<h1>DBATU GradeMate</h1>
+<h1>DBATU SGPA & CGPA Calculator</h1>
 
-<p>SGPA & CGPA Calculator</p>
+<p>
+Free and accurate GPA calculator for Dr. Babasaheb Ambedkar Technological University students.
+Calculate your SGPA and CGPA instantly using the official grading system.
+</p>
 
 </div>
 
-
 <div class="container">
-
 
 <div class="card">
 
@@ -59,31 +66,21 @@ Direct Second Year
 
 </div>
 
-
-
 <div id="mainApp" style="display:none;">
 
-
 <div class="card">
-
 <h3>Semester</h3>
-
 <select id="semesterSelect"></select>
-
 </div>
-
-
 
 <div class="card">
 
 <h3>Add Subject</h3>
 
 <div class="input-group">
-
 <input type="number" id="credit" placeholder="Credit">
 
 <select id="grade">
-
 <option value="">Grade</option>
 <option>EX</option>
 <option>AA</option>
@@ -97,9 +94,7 @@ Direct Second Year
 <option>EE</option>
 <option>FF</option>
 <option>AU</option>
-
 </select>
-
 </div>
 
 <button class="primary full-btn" onclick="addSubject()">Add Subject</button>
@@ -115,8 +110,6 @@ Ignore AU Subjects
 
 </div>
 
-
-
 <div class="card">
 
 <h3>Results</h3>
@@ -127,13 +120,31 @@ Ignore AU Subjects
 
 </div>
 
+</div>
+
+<!-- ✅ SEO CONTENT (clean + non-intrusive) -->
+<div class="card seo-content">
+
+<h2>About DBATU GradeMate</h2>
+
+<p>
+DBATU GradeMate is a free SGPA and CGPA calculator designed for students of
+Dr. Babasaheb Ambedkar Technological University. It follows the official
+credit-based grading system and helps students calculate GPA quickly and accurately.
+</p>
+
+<h2>How to Calculate SGPA in DBATU</h2>
+
+<p>
+SGPA is calculated by multiplying grade points with subject credits, summing them,
+and dividing by total credits. This tool automates the process to save time and avoid errors.
+</p>
 
 </div>
 
 </div>
 
 </div>
-
 
 <script src="app.js"></script>
 

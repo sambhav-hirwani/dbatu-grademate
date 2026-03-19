@@ -1,6 +1,7 @@
-# 🚀 DBATU GradeMate
+# 🚀 DBATU GradeMate – SGPA & CGPA Calculator for DBATU Students
 
-A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Technological University (DBATU)** students to calculate **SGPA** and **CGPA** accurately using the official credit and grading system.
+A **free SGPA and CGPA calculator for DBATU (Dr. Babasaheb Ambedkar Technological University)** students.
+This Progressive Web App (PWA) helps you accurately calculate semester GPA, overall CGPA, and academic performance using the official DBATU credit and grading system.
 
 ---
 
@@ -10,61 +11,67 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 ---
 
+## 🎯 Keywords
+
+DBATU SGPA calculator, DBATU CGPA calculator, DBATU GPA calculator, engineering CGPA calculator, Maharashtra engineering GPA tool, DBATU result calculator
+
+---
+
 ## 📌 Features
 
-* 📊 **SGPA Calculator**
+* 📊 **SGPA Calculator for DBATU**
   Calculate semester GPA using subject-wise credits and grades
 
-* 🎓 **CGPA Calculator**
+* 🎓 **CGPA Calculator for Engineering Students**
   Track overall academic performance across semesters
 
-* 🔄 **DSY Support**
-  Handles Direct Second Year student calculations
+* 🔄 **Direct Second Year (DSY) Support**
+  Supports lateral entry students
 
-* 🧮 **AU Handling**
-  Proper handling of backlog / absent subjects
+* 🧮 **Backlog / AU Handling**
+  Handles absent and failed subjects correctly
 
-* 📱 **Responsive Design**
-  Works seamlessly across desktop and mobile devices
+* 📱 **Mobile-Friendly Responsive Design**
+  Works smoothly on phones and desktops
 
-* ⚡ **Progressive Web App (PWA)**
-  Installable and works offline
+* ⚡ **Offline Support (PWA)**
+  Installable web app that works without internet
 
 ---
 
 ## 📷 Screenshots
 
-### 🏠 Home Interface
+### 🏠 DBATU GradeMate Home Interface
 
 ![Home](assets/screenshots/home.png)
 
 ---
 
-### 📊 Semester Selection
+### 📊 Semester Selection (DBATU GPA Calculation)
 
 ![Semester](assets/screenshots/semister.png)
 
 ---
 
-### 📊 Add Subjects
+### 📊 Add Subjects & Credits
 
 ![Subjects](assets/screenshots/subjects.png)
 
 ---
 
-### 📊 SGPA / CGPA Calculation
+### 📊 SGPA / CGPA Result Output
 
 ![Calculation](assets/screenshots/result.png)
 
 ---
 
-### 🌙 Dark Mode
+### 🌙 Dark Mode UI
 
 ![Dark Mode](assets/screenshots/dark.png)
 
 ---
 
-### 📱 Mobile View
+### 📱 Mobile Responsive View
 
 <p align="center">
   <img src="assets/screenshots/mobile1.png" width="230"/>
@@ -73,11 +80,11 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 ---
 
-### ⚡ PWA Installation
+### ⚡ Install as App (PWA)
 
 <p align="center">
-  <img src="assets/screenshots/pwa1.png" width="250"/>
-  <img src="assets/screenshots/pwa2.png" width="250"/>
+  <img src="assets/screenshots/pwa1.png" width="230"/>
+  <img src="assets/screenshots/pwa2.png" width="230"/>
 </p>
 
 ---
@@ -91,26 +98,35 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 ---
 
-## ⚙️ How to Run Locally
+## ⚙️ How to Use DBATU GradeMate
 
-```bash
+1. Select your semester
+2. Enter subject credits and grades
+3. View your SGPA instantly
+4. Add multiple semesters to calculate CGPA
+
+---
+
+## ⚙️ Run Locally
+
+```bash id="u6p7iv"
 git clone https://github.com/sambhav-hirwani/dbatu-grademate.git
 cd dbatu-grademate
 ```
 
-Then open:
+Open:
 
-```bash
+```bash id="3q9w7x"
 index.html
 ```
 
 ---
 
-## 📦 Installation (PWA)
+## 📦 Install as App (PWA)
 
-1. Open the live app in your browser
-2. Click on **“Install App”** (or “Add to Home Screen”)
-3. Use it like a native app, even offline
+1. Open the app in browser
+2. Click **Install App / Add to Home Screen**
+3. Use it offline anytime
 
 ---
 
@@ -119,17 +135,17 @@ index.html
 * 🎯 Target CGPA Predictor
 * 📈 Performance Analytics
 * 🎨 UI/UX Enhancements
-* 📊 Grade Insights & Suggestions
+* 📊 Smart Grade Insights
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+MIT License
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Sambhav Hirwani**
 GitHub: https://github.com/sambhav-hirwani
