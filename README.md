@@ -48,7 +48,7 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 ### 📊 Add Subjects
 
-![Calculation](assets/screenshots/subjects.png)
+![Add Subjects](assets/screenshots/subjects.png)
 
 ---
 ### 📊 SGPA / CGPA Calculation
