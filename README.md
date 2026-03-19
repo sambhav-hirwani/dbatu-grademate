@@ -36,19 +36,19 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 ### 🏠 Home Interface
 
-![Home](assets/images/home.png)
+![Home](assets/screenshots/home.png)
 
 ---
 
 ### 📊 Select Semister
 
-![Select Semister](assets/images/semister.png)
+![Select Semister](assets/screenshots/semister.png)
 
 ---
 
 ### 📊 Add Subjects
 
-![Calculation](assets/images/subjects.png)
+![Calculation](assets/screenshots/subjects.png)
 
 ---
 ### 📊 SGPA / CGPA Calculation
@@ -65,15 +65,13 @@ A Progressive Web App (PWA) built specifically for **Dr. Babasaheb Ambedkar Tech
 
 ### 📱 Mobile View
 
-![Mobile](assets/screenshots/mobile1.png)
-![Mobile](assets/screenshots/mobile2.png)
+![Mobile](assets/screenshots/mobile1.png)  ![Mobile](assets/screenshots/mobile2.png)
 
 ---
 
 ### ⚡ PWA Installation
 
-![PWA](assets/screenshots/pwa1.png)
-![PWA](assets/screenshots/pwa2.png)
+![PWA](assets/screenshots/pwa1.png)  ![PWA](assets/screenshots/pwa2.png)
 
 ---
 
