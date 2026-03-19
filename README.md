@@ -47,7 +47,7 @@ DBATU SGPA calculator, DBATU CGPA calculator, DBATU GPA calculator, engineering 
 
 ---
 
-### 📊 Semester Selection (DBATU GPA Calculation)
+### 📊 Admission type & Semester Selection
 
 ![Semester](assets/screenshots/semister.png)
 
@@ -59,7 +59,7 @@ DBATU SGPA calculator, DBATU CGPA calculator, DBATU GPA calculator, engineering 
 
 ---
 
-### 📊 SGPA / CGPA Result Output
+### 📊 SGPA / CGPA / Percentage Result Output
 
 ![Calculation](assets/screenshots/result.png)
 
